@@ -7,8 +7,12 @@ export const FollowUsComponent = () => {
             Discover the thrilling AI gaming in today's world. Follow us on
           </div>
           <div className="flex mt-2">
-            <img src="LinkedIn.svg"></img>
-            <img src="Instagram.svg"></img>
+              <a href="">
+                <img src="LinkedIn.svg" />
+              </a>
+              <a href="">
+                <img src="Instagram.svg" />
+              </a>
           </div>
         </div>
         <div className="font-orelega text-3xl">

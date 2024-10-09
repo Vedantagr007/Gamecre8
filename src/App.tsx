@@ -3,7 +3,6 @@ import "./App.css";
 
 import { Dashboard } from "./pages/Dashboard";
 import { RecoilRoot } from "recoil";
-import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={Dashboard} />
-          <Route path="/main" Component={Navbar}></Route>
+          {/* <Route path="/main" Component={Navbar}></Route> */}
         </Routes>
       </BrowserRouter>
     </RecoilRoot>

@@ -1,7 +1,7 @@
 export const Team = () => {
   return (
     <>
-      <div className="mt-16">
+      <div className="mt-16" id="team-section">
         <div className="flex justify-center font-orelega text-4xl ">
           Meet Our Team
         </div>

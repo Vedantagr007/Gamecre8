@@ -8,27 +8,33 @@ export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className="flex justify-between m-5 px-10">
-      <div className="flex justify-normal">
-        <img className="w-[70px] h-[70px]" src="logo.png" alt="logo" />
-        <span className="flex items-center font-orelega text-2xl bg-gradient-to-r from-[#FF6FD8] to-[#3813C2] text-transparent bg-clip-text">
+      <div className="flex">
+        <img className="h-[70px]" src="logo.png" alt="logo" />
+        <span className="flex items-center font-orelega text-3xl bg-gradient-to-r from-[#FF6FD8] to-[#3813C2] text-transparent bg-clip-text">
           GameCre8
         </span>
       </div>
       <div className="flex gap-8 justify-center items-center">
-        <div className="flex font-orelega text-[#7C49BE] underline text-lg">
+        <div className="flex font-orelega text-[#7C49BE] text-lg" id="">
           About us
         </div>
-        <div className="flex font-orelega text-[#7C49BE] underline text-lg">
-          Product
+        <div className="flex font-orelega text-[#7C49BE] text-lg">
+          <a href="#products-section">
+            Product
+          </a>
         </div>
-        <div className="flex font-orelega text-[#7C49BE] underline text-lg">
-          Model
+        <div className="flex font-orelega text-[#7C49BE] text-lg">
+          <a href="#model-section">
+            Model
+          </a>
         </div>
-        <div className="flex font-orelega text-[#7C49BE] underline text-lg">
+        <div className="flex font-orelega text-[#7C49BE] text-lg">
           Follow us
         </div>
-        <div className="flex font-orelega text-[#7C49BE] underline text-lg">
-          Team
+        <div className="flex font-orelega text-[#7C49BE] text-lg">
+          <a href="#team-section">
+            Team
+          </a>
         </div>
       </div>
       <div className="flex justify-center items-center">
@@ -40,7 +46,7 @@ export const Navbar = () => {
               navigate("/main");
             }}
           >
-            <div className="font-orelega underline text-[#7C49BE]">
+            <div className="font-orelega text-[#7C49BE]">
               Create account
             </div>
             <span className="flex justify-center">

@@ -24,7 +24,7 @@ export const Hero = () => {
           just entertain, they evolve.
         </div>
         <div className="flex justify-center mt-20 ">
-          <button className="flex justify-center items-center rounded-full gap-1 bg-gradient-to-r from-[#B40090] to-[#7C49BE] font-orelega text-white p-2">
+          <button className="flex justify-center items-center rounded-full gap-1 bg-gradient-to-r from-[#B40090] to-[#7C49BE] font-orelega text-white p-2 text-xl shadow-[0_0_20px_#B40090,0_0_20px_#7C49BE] transition duration-300 transform hover:scale-110">
             <div>Try Eyas</div>
             <img src="mouse.svg" width={"20px"} height={"20px"}></img>
           </button>
