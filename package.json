@@ -12,9 +12,11 @@
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
+    "@popperjs/core": "^2.11.8",
     "@react-icons/all-files": "^4.1.0",
     "@types/react-router-dom": "^5.3.3",
     "@types/recoil": "^0.0.9",
+    "bootstrap": "^5.3.3",
     "headlessui": "^0.0.0",
     "heroicons": "^2.1.5",
     "install": "^0.13.0",

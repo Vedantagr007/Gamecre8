@@ -7,33 +7,43 @@ export const Hero = () => {
   return (
     <div>
       <div
-        className=" h-[700px]  text-black pt-24 "
+        className="pt-5"
         style={{
+          height: "700px",
           backgroundImage: "url(heroGif.gif)",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
       >
-        <div className="flex justify-center items-center text-center font-orelega text-7xl">
+        <div className="d-flex justify-content-center align-items-center text-center display-2 fw-bold">
           Let your imagination create <br></br> new worlds
         </div>
-        <div className="flex justify-center font-orelega font-thin text-3xl pt-4">
-          At <u className="px-1">GameCre8</u> , we're obsessed with the ultimate
+        <div className="d-flex justify-content-center text-center mt-4 h4 font-weight-light">
+          At <u className="px-1">GameCre8</u>, we're obsessed with the ultimate
           gaming experience. With LGM (Large <br /> Game Model), our games don't
           just entertain, they evolve.
         </div>
-        <div className="flex justify-center mt-20 ">
-          <button className="flex justify-center items-center rounded-full gap-1 bg-gradient-to-r from-[#B40090] to-[#7C49BE] font-orelega text-white p-2 text-xl shadow-[0_0_20px_#B40090,0_0_20px_#7C49BE] transition duration-300 transform hover:scale-110">
-            <div>Try Eyas</div>
-            <img src="mouse.svg" width={"20px"} height={"20px"}></img>
+        <div className="d-flex justify-content-center mt-5">
+          <button className="btn btn-lg btn-gradient rounded-pill d-flex align-items-center justify-content-center shadow" style={{
+              background: "linear-gradient(to right, #B40090, #7C49BE)",
+              boxShadow: "0 0 20px #B40090, 0 0 20px #7C49BE",
+              padding: "10px 20px",
+              transition: "transform 0.3s",
+              color: "white"
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.15)")}
+            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+          >
+            <div className="me-2">Try Eyas</div>
+            <img src="mouse.svg" width="24px" height="24px" alt="mouse-icon" />
           </button>
         </div>
       </div>
-      <ProductSection></ProductSection>
-      <FollowUsComponent></FollowUsComponent>
-      <ModelInfo></ModelInfo>
-      <Team></Team>
+      <ProductSection />
+      <FollowUsComponent />
+      <ModelInfo />
+      <Team />
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css";
+import './index.css';
 
 import { Dashboard } from "./pages/Dashboard";
 import { RecoilRoot } from "recoil";

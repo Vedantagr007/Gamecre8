@@ -2,22 +2,22 @@ export const Logout = ({ onClose }: { onClose: () => void }) => {
   const handleClose = () => {
     onClose();
   };
+  
   return (
     <>
       <div
         id="feedback-modal"
         tabIndex={-1}
         aria-hidden="true"
-        className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden h-[calc(100%-1rem)] max-h-full bg-[#D9D9D9] bg-opacity-50"
+        className="position-fixed top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center bg-secondary bg-opacity-50"
+        style={{ zIndex: 50 }}
       >
-        <div className="relative p-4 w-full max-w-2xl max-h-full">
-          <div className="relative bg-white rounded-2xl shadow">
-            <div className="flex justify-between p-4 md:p-5 rounded-t ">
+        <div className="relative p-4 w-100" style={{ maxWidth: "720px" }}>
+          <div className="bg-white rounded shadow">
+            <div className="d-flex justify-content-between p-4 rounded-top">
               <div></div>
-              <div className=" text-xl font-normal text-gray-900 font-orelega">
-                Log-out
-              </div>
-              <button onClick={handleClose}>
+              <div className="h5 text-body">Log-out</div>
+              <button onClick={handleClose} className="btn p-0">
                 <svg
                   width="24"
                   height="24"
@@ -28,25 +28,25 @@ export const Logout = ({ onClose }: { onClose: () => void }) => {
                   <path
                     d="M18 6L6 18M6 6L18 18"
                     stroke="gray"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
             </div>
 
-            <div className="px-5 flex justify-center">
-              <div className="text-lg font-normal font-orelega text-[#AAAAAA]  mb-4">
-                Are you sure you want to exit
+            <div className="px-4 text-center">
+              <div className="h6 text-muted mb-4">
+                Are you sure you want to exit?
               </div>
             </div>
 
-            <div className="flex justify-center gap-3 mb-6 pb-6 font-orelega">
-              <button className="px-6 py-3 bg-[#D9D9D9] rounded-2xl">
+            <div className="d-flex justify-content-center gap-3 mb-4 pb-4">
+              <button className="btn btn-secondary px-4 py-2 rounded-pill">
                 Yes
               </button>
-              <button className="px-6 py-3 bg-[#7C49BE] rounded-2xl text-white">
+              <button className="btn btn-primary text-white px-4 py-2 rounded-pill">
                 No
               </button>
             </div>
