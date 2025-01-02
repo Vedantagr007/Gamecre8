@@ -27,7 +27,7 @@ const FeedbackModal = ({ onClose }: { onClose: () => void }) => {
           backgroundColor: "#D9D9D9",
         }}
       >
-        <div className="modal-dialog">
+        <div className="modal-dialog responsive-modal-dialog">
           <div className="modal-content rounded-3 shadow">
             <div className="modal-header d-flex justify-content-between">
               <div className="modal-title h5">Feedback</div>
@@ -92,6 +92,7 @@ const Rating = () => {
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           onClick={() => handleRatingClick(index + 1)}
+          className="rating-star"
         >
           <polygon
             points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9"
@@ -106,3 +107,39 @@ const Rating = () => {
 };
 
 export default FeedbackModal;
+
+// Add the following CSS styles for responsiveness
+const styles = `
+  .modal-dialog {
+    max-width: 600px;
+    margin: 1rem;
+  }
+
+  .rating-star {
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .responsive-modal-dialog {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .responsive-modal-dialog {
+      max-width: 100%;
+      padding: 1rem;
+    }
+
+    .rating-star {
+      width: 25px;
+      height: 25px;
+    }
+  }
+`;
+
+// Inject the styles into the DOM
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = styles;
+document.head.appendChild(styleSheet);

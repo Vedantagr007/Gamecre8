@@ -1,0 +1,100 @@
+/* Base styles */
+:root {
+  --max-width: 1400px;
+  --container-padding: 1rem;
+}
+
+/* Container class for consistent layout */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Responsive typography */
+html {
+  font-size: 16px;
+}
+
+/* Media Queries */
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    --container-padding: 0.5rem;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Laptops and desktops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Flexible grid system */
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive navigation */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide-mobile {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}

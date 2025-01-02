@@ -14,27 +14,28 @@ export const Team = () => {
           </div>
         </div>
       </div>
+
       <div className="row mt-4">
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
             <div className="text-secondary col-5">Co-Founder & Team Lead</div>
             <div className="col-5 text-center">Tanmay Dumbre</div>
             <div className="col-2 text-end">
-              <img src="Tanmay.svg" alt="Tanmay" />
+              <img src="Tanmay.svg" alt="Tanmay" className="img-fluid" />
             </div>
           </div>
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
             <div className="text-secondary col-5">UI/UX Designer</div>
             <div className="col-5 text-center">Motoni Ayodele</div>
             <div className="col-2 text-end">
-              <img src="Motoni.svg" alt="Motoni" />
+              <img src="Motoni.svg" alt="Motoni" className="img-fluid" />
             </div>
           </div>
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
             <div className="text-secondary col-5">AI Developer</div>
             <div className="col-5 text-center">Bittu Singh</div>
             <div className="col-2 text-end">
-              <img src="Bittu.svg" alt="Bittu" />
+              <img src="Bittu.svg" alt="Bittu" className="img-fluid" />
             </div>
           </div>
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
@@ -44,37 +45,39 @@ export const Team = () => {
               <img
                 src="vivek.JPG"
                 alt="Vivek"
+                className="img-fluid rounded-circle"
                 width="48"
                 height="48"
-                className="rounded-circle"
               />
             </div>
           </div>
         </div>
-        <div className="col-6">
+
+        <div className="col-12 col-md-6">
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
             <div className="text-secondary col-5">Senior AI Developer</div>
             <div className="col-5 text-center">Rahul Kumar</div>
             <div className="col-2 text-end">
-              <img src="Rahul.svg" alt="Rahul" />
+              <img src="Rahul.svg" alt="Rahul" className="img-fluid" />
             </div>
           </div>
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
             <div className="text-secondary col-5">AI Researcher</div>
             <div className="col-5 text-center">Sagar Vincent</div>
             <div className="col-2 text-end">
-              <img src="Sagar.svg" alt="Sagar" />
+              <img src="Sagar.svg" alt="Sagar" className="img-fluid" />
             </div>
           </div>
           <div className="d-flex justify-content-between align-items-center border-bottom py-3 mx-4">
             <div className="text-secondary col-5">Senior AI Developer</div>
             <div className="col-5 text-center">Adarsh</div>
             <div className="col-2 text-end">
-              <img src="Adarsh.svg" alt="Adarsh" />
+              <img src="Adarsh.svg" alt="Adarsh" className="img-fluid" />
             </div>
           </div>
         </div>
       </div>
+
       <div className="border-bottom mt-4 mx-4"></div>
     </>
   );
